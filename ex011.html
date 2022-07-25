@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Nacionalidade</title>
+</head>
+<body>
+    <h1>Qual sua Nacionalidade?</h1>
+    <input type="text" name="txtn" id="txtn">
+    <input type="button" value="Confirmar" onclick="verificar()">
+    <div>
+
+    </div>
+    <script>
+        function verificar() {
+        var nac = window.document.querySelector('input#txtn')
+        var div = window.document.querySelector('div')
+            if (nac == 'Brasileira') {
+                div.innerHTML = '<p>Você é Brasileiro!<p>'
+            } else {
+                div.innerHTML = '<p>Você é Estrangeiro!</p>'
+            }
+        }
+    </script>
+
+    <!--  var país = 'Argentina'
+console.log (`Vivendo no ${país}`)
+if (país == 'Brasil') {
+console.log ('Você é Brasileiro!')
+} else {
+console.log ('Você é Estrangeiro!')
+}      -->
+</body>
+</html>
